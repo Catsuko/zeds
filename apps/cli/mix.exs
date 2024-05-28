@@ -24,7 +24,7 @@ defmodule Cli.MixProject do
   defp deps do
     [
       {:cluster_supervisor, in_umbrella: true},
-      {:world, in_umbrella: true, app: false}
+      {:world, in_umbrella: true, runtime: false}
     ]
   end
 end
