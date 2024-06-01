@@ -17,8 +17,8 @@ defmodule World.MixProject do
 
   def application do
     [
-      extra_applications: [:logger],
-      mod: {World, ["Durotar", "The Barrens", "Stonetalon Mountain"]}
+      extra_applications: [:logger, :eex, :wx, :observer, :runtime_tools],
+      mod: {World, ["Durotar", "The Barrens", "Stonetalon Mountains"]}
     ]
   end
 

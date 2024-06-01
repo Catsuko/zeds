@@ -2,7 +2,7 @@ defmodule Cli do
   def start do
     IO.gets("What is your name?\n")
     |> String.trim()
-    |> World.new_player()
+    |> World.wake_up()
     |> render()
   end
 

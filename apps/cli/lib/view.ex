@@ -1,5 +1,5 @@
 defmodule Cli.View do
-  def describe({space, _player}) do
+  def describe({_player, space}) do
     """
     \n#{space.name}
     ----------

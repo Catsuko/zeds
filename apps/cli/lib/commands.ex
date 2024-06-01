@@ -1,9 +1,9 @@
 defmodule Cli.Commands do
-  def execute(["move", next_area_name], {area, player}) do
-    World.move(player.name, area.name, next_area_name)
+  def execute(["move", next_area_name], {player, area}) do
+    World.move(area.name, player, next_area_name)
   end
 
-  def execute(["look around"], {area, player}) do
-    {World.look_around(area.name), player}
+  def execute(["look around"], {player, area}) do
+    {player, World.look_around(area.name)}
   end
 end
